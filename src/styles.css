@@ -80,3 +80,16 @@ a:visited {
 .type {
   border-color: #1e56a0;
 }
+.source-link {
+  color: #ffff;
+  padding: 15px;
+  margin: 20px auto;
+}
+.github-link {
+  color: #53a8b6;
+  margin-left: 250px;
+}
+.github-link:hover {
+  color: #79c2d0;
+  font-weight: normal;
+}
