@@ -21,6 +21,10 @@ li {
   line-height: 1;
   list-style: none;
 }
+
+li:first-letter {
+  text-transform: capitalize;
+}
 .weather-app {
   border: 1px solid #f6f6f6;
   padding: 15px;
@@ -35,15 +39,22 @@ li {
   font-weight: 400;
   line-height: 60px;
 }
-a {
+.temp-link {
   text-decoration: none;
-  color: #163172;
+  color: rgb(22, 49, 114, 0.8);
 }
-a:hover {
+.temp-link:hover {
+  text-decoration: underline;
   font-weight: bold;
+  color: rgb(22, 49, 114, 1);
 }
-a:visited {
+.active {
+  cursor: default;
   font-weight: bold;
+  color: rgb(22, 49, 114, 1);
+}
+.active:hover {
+  text-decoration: none;
 }
 .weather-icon {
   height: 64px;
