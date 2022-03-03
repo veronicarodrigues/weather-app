@@ -48,9 +48,7 @@ function getCity(fullData) {
   let descriptionElement = document.querySelector("#description");
   let dateTime = document.querySelector("#date-time");
   let iconElement = document.querySelector("#icon");
-
   celsiusTemperature = fullData.data.main.temp;
-
   document.querySelector("#city-display").innerHTML = `${city}, ${country}`;
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
@@ -59,7 +57,7 @@ function getCity(fullData) {
     fullData.data.wind.speed
   );
   descriptionElement.innerHTML = fullData.data.weather[0].description;
-  dateTime = formatDate(fullData.data.dt * 1000);
+  dateTime.innerHTML = formatDate(fullData.data.dt * 1000);
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${fullData.data.weather[0].icon}@2x.png`
@@ -88,12 +86,14 @@ function getCurrentInfo(data) {
   let city = data.data.name;
   let country = data.data.sys.country;
   let temperatureCelisus = Math.round(data.data.main.temp);
+  let dateTime = document.querySelector("#date-time");
   let descriptionElement = document.querySelector("#description");
   let iconElement = document.querySelector("#icon");
   document.querySelector("#city-display").innerHTML = `${city}, ${country}`;
   document.querySelector("#temperature").innerHTML = temperatureCelisus;
   document.querySelector("#humidity").innerHTML = data.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(data.data.wind.speed);
+  dateTime.innerHTML = formatDate(data.data.dt * 1000);
   descriptionElement.innerHTML = data.data.weather[0].description;
   iconElement.setAttribute(
     "src",
