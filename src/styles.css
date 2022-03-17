@@ -70,7 +70,7 @@ li:first-letter {
 }
 .search-button {
   background-color: #1e56a0;
-  color: #fff;
+  color: #ffff;
   box-shadow: rgb(37, 39, 89 / 8%) 0px 8px 8px 0;
   transition: all 200ms ease-in-out;
   border-color: #f6f6f6;
