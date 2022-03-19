@@ -95,10 +95,10 @@ li:first-letter {
   color: #ffff;
   padding: 15px;
   margin: 20px auto;
+  margin-left: 250px;
 }
 .github-link {
   color: #53a8b6;
-  margin-left: 250px;
 }
 .github-link:hover {
   color: #79c2d0;
@@ -118,4 +118,18 @@ li:first-letter {
 }
 .weather-forecast-temperature-min {
   opacity: 0.7;
+}
+.current-button:focus {
+  background-color: #bbe4e9;
+  color: #163172;
+  box-shadow: rgb(37, 39, 89 / 8%) 0px 8px 8px 0;
+  transition: all 200ms ease-in-out;
+  border-color: #163172;
+}
+.search-button:focus {
+  background-color: #1e56a0;
+  color: #ffff;
+  box-shadow: rgb(37, 39, 89 / 8%) 0px 8px 8px 0;
+  transition: all 200ms ease-in-out;
+  border-color: #f6f6f6;
 }
